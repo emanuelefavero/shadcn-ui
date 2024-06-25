@@ -1,8 +1,8 @@
 # Shadcn/ui
 
-This project is built Next.js and components from the Shadcn/ui collection.
+This project is built Next.js and components from the [Shadcn/ui](https://ui.shadcn.com/) collection.
 
-> Note: [Shadcn/ui](https://ui.shadcn.com/) is NOT a component library. It is a collection of components that you can copy and paste into your project
+> Note: Shadcn/ui is NOT a component library. It is a collection of components that you can copy and paste into your project
 >
 > Note: This is a work in progress
 
