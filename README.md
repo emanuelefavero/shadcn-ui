@@ -29,3 +29,7 @@ Follow this guide to create a new project with Shadcn/ui components: [Create a n
 - [Shadcn/ui](https://ui.shadcn.com/)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+
+## License
+
+- [MIT](LICENSE.md)
