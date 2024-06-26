@@ -1,26 +1,14 @@
 import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
   Database,
   LayoutDashboard,
-  LifeBuoy,
   LogOut,
-  Mail,
   Map,
-  MessageSquare,
   Menu,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  UserPlus,
-  Users,
   Hexagon,
   CircleDollarSign,
   Zap,
   MessageSquareText,
+  Settings,
 } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
@@ -30,14 +18,10 @@ import {
   DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { AccountButton } from '@/components/account-button'
 
 export function Sidebar() {
   return (
@@ -88,9 +72,7 @@ export function Sidebar() {
 
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <LogOut className='mr-2 h-4 w-4' />
-          <span>Log out</span>
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          <AccountButton />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
