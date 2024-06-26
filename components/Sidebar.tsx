@@ -1,7 +1,6 @@
 import {
   Database,
   LayoutDashboard,
-  LogOut,
   Map,
   Menu,
   Hexagon,
@@ -69,6 +68,9 @@ function Sidebar() {
           <MessageSquareText className='mr-2 h-4 w-4' />
           <span>Help</span>
         </DropdownMenuItem>
+
+        {/* Whitespace */}
+        <div className='h-20'></div>
 
         <DropdownMenuSeparator />
         <DropdownMenuItem>
