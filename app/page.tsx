@@ -1,5 +1,5 @@
 import { H1, P } from '@/components/ui/typography'
-import Header from '@/components/header'
+import { Header } from '@/components/header'
 
 export default function Home() {
   return (

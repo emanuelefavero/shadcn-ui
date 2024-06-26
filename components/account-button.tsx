@@ -1,5 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { EllipsisVertical } from 'lucide-react'
 
 function AccountButton() {
   return (
@@ -16,7 +15,6 @@ function AccountButton() {
           </a>
         </div>
       </div>
-      <EllipsisVertical />
     </div>
   )
 }

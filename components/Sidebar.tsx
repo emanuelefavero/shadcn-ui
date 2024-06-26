@@ -23,7 +23,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { AccountButton } from '@/components/account-button'
 
-export function Sidebar() {
+function Sidebar() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -78,3 +78,5 @@ export function Sidebar() {
     </DropdownMenu>
   )
 }
+
+export { Sidebar }
