@@ -3,7 +3,7 @@ import { Sidebar } from '@/components/sidebar'
 
 function Header() {
   return (
-    <header className='flex justify-between w-full px-2 py-2'>
+    <header className='flex justify-between w-full px-4 py-2 mb-6'>
       <Sidebar />
       <DarkModeToggle />
     </header>
