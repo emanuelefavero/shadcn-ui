@@ -18,7 +18,10 @@ function FirstCardMenu({ data }: Props) {
     <>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant='ghost' className='p-1'>
+          <Button
+            variant='ghost'
+            className={`p-1 ${!data.selected && 'invisible'}`}
+          >
             <EllipsisVertical
               className={`h-4 w-4 ${
                 data.selected && 'text-white dark:text-background'
