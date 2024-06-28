@@ -29,8 +29,9 @@ function MainCard() {
             handleSelect(data.label)
           }}
           className={`flex flex-col p-5 hover:bg-purple-500 hover:bg-opacity-5 ${
-            data.selected &&
-            'bg-gradient-to-br from-purple-500 to-purple-300 dark:from-purple-500 dark:to-purple-300'
+            data.selected
+              ? 'bg-gradient-to-br from-purple-500 to-purple-300 dark:from-purple-500 dark:to-purple-300'
+              : 'cursor-pointer'
           }`}
         >
           <div className='flex items-center justify-between mb-4'>
