@@ -1,23 +1,9 @@
-import {
-  Database,
-  LayoutDashboard,
-  Map,
-  Menu,
-  Hexagon,
-  CircleDollarSign,
-  Zap,
-  MessageSquareText,
-  Settings,
-  RefreshCcw,
-} from 'lucide-react'
+import { RefreshCcw } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
 import { EllipsisVertical } from 'lucide-react'

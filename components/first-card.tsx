@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { EllipsisVertical } from 'lucide-react'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { convertLabelToId } from '@/utils/stringUtils'

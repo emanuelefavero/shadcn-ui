@@ -73,4 +73,8 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  ::selection {
+    background-color: hsla(271, 91%, 65%, 0.4);
+  }
 }
