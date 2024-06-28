@@ -18,7 +18,7 @@ function SearchInput() {
       {/* Search Input */}
       <div className='relative max-w-60 hidden xs:block'>
         <Button
-          className='w-full min-w-40 justify-start pl-9 pr-4 py-2 bg-purple-900 bg-opacity-5 text-slate-500 rounded-lg border hover:bg-purple-900 hover:bg-opacity-25 hover:text-foreground peer'
+          className='w-full min-w-40 justify-start pl-9 pr-4 py-2 bg-purple-900 bg-opacity-5 text-slate-500 rounded-lg border hover:bg-purple-500 hover:bg-opacity-10 hover:text-foreground peer'
           onClick={handleOpenChange}
         >
           Search...
