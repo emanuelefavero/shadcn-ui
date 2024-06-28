@@ -5,9 +5,9 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { convertLabelToId } from '@/utils/stringUtils'
 import { mainData } from '@/data/mainData'
-import { FirstCardMenu } from './first-card-menu'
+import { MainCardMenu } from './main-card-menu'
 
-function FirstCard() {
+function MainCard() {
   const [data, setData] = useState(mainData)
 
   const handleSelect = (label: string) => {
@@ -42,7 +42,7 @@ function FirstCard() {
             >
               {data.label}
             </label>
-            <FirstCardMenu data={data} />
+            <MainCardMenu data={data} />
           </div>
           <data
             id={convertLabelToId(data.label)}
@@ -66,4 +66,4 @@ function FirstCard() {
   )
 }
 
-export { FirstCard }
+export { MainCard }

@@ -13,7 +13,7 @@ interface Props {
   data: MainData
 }
 
-function FirstCardMenu({ data }: Props) {
+function MainCardMenu({ data }: Props) {
   return (
     <>
       <DropdownMenu>
@@ -41,4 +41,4 @@ function FirstCardMenu({ data }: Props) {
   )
 }
 
-export { FirstCardMenu }
+export { MainCardMenu }
