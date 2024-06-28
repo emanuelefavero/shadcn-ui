@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className='px-4 py-2'>
+      <main className='px-4 py-2 w-full max-w-screen-2xl m-auto'>
         <Dashboard />
       </main>
 
