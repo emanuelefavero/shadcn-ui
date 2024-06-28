@@ -10,11 +10,24 @@ import { FirstCardMenu } from './first-card-menu'
 function FirstCard() {
   const [data, setData] = useState(mainData)
 
+  const handleSelect = (label: string) => {
+    setData((prevData) =>
+      prevData.map((data) => ({
+        ...data,
+        selected: data.label === label,
+      }))
+    )
+  }
+
   return (
     <Card className='grid grid-cols-[repeat(2,1fr)] max-w-[500px] w-full rounded-xl overflow-hidden bg-purple-900 bg-opacity-5 [&>*:nth-child(odd)]:border-r [&>*:nth-child(1)]:border-b [&>*:nth-child(2)]:border-b [&>*]:border-border'>
       {data.map((data) => (
         <div
           key={data.label}
+          role='group'
+          onClick={() => {
+            handleSelect(data.label)
+          }}
           className={`flex flex-col p-5 hover:bg-purple-500 hover:bg-opacity-5 ${
             data.selected &&
             'bg-gradient-to-br from-purple-500 to-purple-300 dark:from-purple-500 dark:to-purple-300'
