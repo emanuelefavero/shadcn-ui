@@ -32,29 +32,39 @@ function SearchMenu({ open, onOpenChange }: Props) {
         <CommandList>
           <CommandEmpty>No results found.</CommandEmpty>
           <CommandGroup heading='Suggestions'>
-            <CommandItem>
-              <LayoutDashboard className='mr-2 h-4 w-4' />
-              <span>Dashboard</span>
-            </CommandItem>
-            <CommandItem>
-              <CircleDollarSign className='mr-2 h-4 w-4' />
-              <span>Revenue</span>
-            </CommandItem>
-            <CommandItem>
-              <Map className='mr-2 h-4 w-4' />
-              <span>Journey</span>
-            </CommandItem>
+            <span onClick={onOpenChange}>
+              <CommandItem className='w-full cursor-pointer'>
+                <LayoutDashboard className='mr-2 h-4 w-4' />
+                <span>Dashboard</span>
+              </CommandItem>
+            </span>
+            <span onClick={onOpenChange}>
+              <CommandItem className='w-full cursor-pointer'>
+                <CircleDollarSign className='mr-2 h-4 w-4' />
+                <span>Revenue</span>
+              </CommandItem>
+            </span>
+            <span onClick={onOpenChange}>
+              <CommandItem className='w-full cursor-pointer'>
+                <Map className='mr-2 h-4 w-4' />
+                <span>Journey</span>
+              </CommandItem>
+            </span>
           </CommandGroup>
           <CommandSeparator />
           <CommandGroup heading='Settings'>
-            <CommandItem>
-              <User className='mr-2 h-4 w-4' />
-              <span>Profile</span>
-            </CommandItem>
-            <CommandItem>
-              <Settings className='mr-2 h-4 w-4' />
-              <span>Settings</span>
-            </CommandItem>
+            <span onClick={onOpenChange}>
+              <CommandItem className='w-full cursor-pointer'>
+                <User className='mr-2 h-4 w-4' />
+                <span>Profile</span>
+              </CommandItem>
+            </span>
+            <span onClick={onOpenChange}>
+              <CommandItem className='w-full cursor-pointer'>
+                <Settings className='mr-2 h-4 w-4' />
+                <span>Settings</span>
+              </CommandItem>
+            </span>
           </CommandGroup>
         </CommandList>
       </CommandDialog>
