@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { convertLabelToId } from '@/utils/stringUtils'
 import { mainData } from '@/data/mainData'
+import { FirstCardMenu } from './first-card-menu'
 
 function FirstCard() {
   const [data, setData] = useState(mainData)
@@ -29,11 +30,7 @@ function FirstCard() {
             >
               {data.label}
             </label>
-            <EllipsisVertical
-              className={`h-4 w-4 ${
-                data.selected && 'text-white dark:text-background'
-              }`}
-            />
+            <FirstCardMenu data={data} />
           </div>
           <data
             id={convertLabelToId(data.label)}
