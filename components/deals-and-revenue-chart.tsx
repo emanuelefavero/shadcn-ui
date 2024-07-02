@@ -77,6 +77,9 @@ function DealsAndRevenueChart({ className }: Props) {
         grid: {
           color: 'rgba(100, 116, 139, 0.1)', // Grid line color
         },
+        border: {
+          color: 'rgba(100, 116, 139, 0)', // Border color
+        },
       },
       y: {
         ticks: {
@@ -88,6 +91,9 @@ function DealsAndRevenueChart({ className }: Props) {
         },
         grid: {
           color: 'rgba(100, 116, 139, 0.1)', // Grid line color
+        },
+        border: {
+          color: 'rgba(100, 116, 139, 0)', // Border color
         },
       },
     },
