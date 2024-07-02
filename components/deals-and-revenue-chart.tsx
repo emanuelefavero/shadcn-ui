@@ -23,11 +23,7 @@ ChartJS.register(
   Legend
 )
 
-interface Props {
-  className?: string
-}
-
-function DealsAndRevenueChart({ className }: Props) {
+function DealsAndRevenueChart() {
   const data = {
     labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     datasets: [
@@ -100,7 +96,7 @@ function DealsAndRevenueChart({ className }: Props) {
   }
 
   return (
-    <div className={className}>
+    <div className='flex justify-center'>
       <Line data={data} options={options} />
     </div>
   )
