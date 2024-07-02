@@ -1,6 +1,7 @@
 import { H1 } from '@/components/ui/typography'
-import { MainCard } from '@/components/main-card'
 import { SearchInput } from '@/components/search-input'
+import { MainCard } from '@/components/main-card'
+import { DealsAndRevenue } from '@/components/deals-and-revenue'
 
 function Dashboard() {
   return (
@@ -11,6 +12,7 @@ function Dashboard() {
       </section>
 
       <MainCard />
+      <DealsAndRevenue />
     </>
   )
 }
