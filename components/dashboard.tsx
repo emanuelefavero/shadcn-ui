@@ -11,8 +11,11 @@ function Dashboard() {
         <SearchInput />
       </section>
 
-      <MainCard />
-      <DealsAndRevenue />
+      {/* Set the section to flex direction column on small screens and flex direction row on the others*/}
+      <section className='flex flex-row flex-wrap gap-8'>
+        <MainCard />
+        <DealsAndRevenue />
+      </section>
     </>
   )
 }
