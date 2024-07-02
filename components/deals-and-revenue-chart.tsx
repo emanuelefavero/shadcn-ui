@@ -11,7 +11,6 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js'
-import { useDarkMode } from '@/hooks/useDarkMode'
 
 // Register components with ChartJS
 ChartJS.register(
@@ -29,10 +28,8 @@ interface Props {
 }
 
 function DealsAndRevenueChart({ className }: Props) {
-  const isDarkMode = useDarkMode()
-
   const data = {
-    labels: ['May', 'June', 'July', 'August', 'September', 'October'],
+    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
     datasets: [
       {
         label: 'Deals',
@@ -57,6 +54,7 @@ function DealsAndRevenueChart({ className }: Props) {
         align: 'end' as const,
 
         labels: {
+          color: '#64748b',
           usePointStyle: true,
           boxWidth: 9,
           boxHeight: 9,
@@ -64,6 +62,32 @@ function DealsAndRevenueChart({ className }: Props) {
           font: {
             size: 14,
           },
+        },
+      },
+    },
+    scales: {
+      x: {
+        ticks: {
+          color: '#64748b',
+          font: {
+            size: 14,
+            weight: 500,
+          },
+        },
+        grid: {
+          color: 'rgba(100, 116, 139, 0.1)', // Grid line color
+        },
+      },
+      y: {
+        ticks: {
+          color: 'rgba(100, 116, 139, 0.8)',
+          font: {
+            size: 14,
+            weight: 400,
+          },
+        },
+        grid: {
+          color: 'rgba(100, 116, 139, 0.1)', // Grid line color
         },
       },
     },
