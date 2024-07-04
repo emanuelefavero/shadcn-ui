@@ -3,7 +3,7 @@ export const campaignData = [
     id: 1,
     campaign: {
       name: 'ROQ',
-      image: 'https://picsum.photos/id/82/50/?blur',
+      image: 'https://picsum.photos/id/82/40/?blur',
       alt: 'campaign one',
       avatarFallback: 'R', // Fallback for the image, use the first letter of the name
       type: 'Search/brand',
@@ -18,7 +18,7 @@ export const campaignData = [
     id: 2,
     campaign: {
       name: 'Website Ads',
-      image: 'https://picsum.photos/id/81/50/?blur',
+      image: 'https://picsum.photos/id/249/40/?blur',
       alt: 'campaign two',
       avatarFallback: 'WA',
       type: 'Re-targeting',
@@ -33,7 +33,7 @@ export const campaignData = [
     id: 3,
     campaign: {
       name: 'Demo',
-      image: 'https://picsum.photos/id/95/50/?blur',
+      image: 'https://picsum.photos/id/152/40/?blur',
       alt: 'campaign three',
       avatarFallback: 'D',
       type: 'Request',
@@ -48,7 +48,7 @@ export const campaignData = [
     id: 4,
     campaign: {
       name: 'Global',
-      image: 'https://picsum.photos/id/135/50/?blur',
+      image: 'https://picsum.photos/id/135/40/?blur',
       alt: 'campaign four',
       avatarFallback: 'G',
       type: 'Tool',
