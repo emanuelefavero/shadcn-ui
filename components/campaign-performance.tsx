@@ -7,8 +7,11 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { campaignData } from '@/data/campaignData'
 
 function CampaignPerformance() {
+  if (!campaignData) return null
+
   return (
     <>
       <h2>CampaignPerformance</h2>
@@ -26,24 +29,31 @@ function CampaignPerformance() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          <TableRow>
-            <TableCell>1</TableCell>
-            <TableCell className='flex'>
-              <Avatar className='mr-3'>
-                <AvatarImage src='https://picsum.photos/id/82/50/?blur' />
-                <AvatarFallback>ROQ</AvatarFallback>
-              </Avatar>
-              <div className='flex flex-col'>
-                <span>ROQ</span>
-                <span>Search/brand</span>
-              </div>
-            </TableCell>
-            <TableCell>1,181</TableCell>
-            <TableCell>217</TableCell>
-            <TableCell>150</TableCell>
-            <TableCell>26.9</TableCell>
-            <TableCell className='text-right'>$78.29</TableCell>
-          </TableRow>
+          {campaignData.map((campaign) => (
+            <TableRow key={campaign.id}>
+              <TableCell>{campaign.id}</TableCell>
+              <TableCell className='flex'>
+                <Avatar className='mr-3'>
+                  <AvatarImage
+                    src={campaign.campaign.image}
+                    alt={campaign.campaign.alt}
+                  />
+                  <AvatarFallback>
+                    {campaign.campaign.avatarFallback}
+                  </AvatarFallback>
+                </Avatar>
+                <div className='flex flex-col'>
+                  <span>{campaign.campaign.name}</span>
+                  <span>{campaign.campaign.type}</span>
+                </div>
+              </TableCell>
+              <TableCell>{campaign.visitors}</TableCell>
+              <TableCell>{campaign.contacts}</TableCell>
+              <TableCell>{campaign.companies}</TableCell>
+              <TableCell>{campaign.leads}</TableCell>
+              <TableCell className='text-right'>${campaign.value}</TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
     </>
