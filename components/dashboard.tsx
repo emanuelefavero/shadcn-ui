@@ -2,6 +2,7 @@ import { H1 } from '@/components/ui/typography'
 import { SearchInput } from '@/components/search-input'
 import { MainCard } from '@/components/main-card'
 import { DealsAndRevenue } from '@/components/deals-and-revenue'
+import { CampaignPerformance } from './campaign-performance'
 
 function Dashboard() {
   return (
@@ -15,6 +16,7 @@ function Dashboard() {
       <section className='flex flex-row flex-wrap gap-8'>
         <MainCard />
         <DealsAndRevenue />
+        <CampaignPerformance />
       </section>
     </>
   )
