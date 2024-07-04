@@ -1,0 +1,58 @@
+export const campaignData = [
+  {
+    id: 1,
+    campaign: {
+      name: 'ROQ',
+      image: 'https://picsum.photos/id/82/50/?blur',
+      alt: 'campaign one',
+      type: 'Search/brand',
+    },
+    visitors: 1181,
+    contacts: 217,
+    companies: 150,
+    leads: 26.9,
+    value: 78.29,
+  },
+  {
+    id: 2,
+    campaign: {
+      name: 'Website Ads',
+      image: 'https://picsum.photos/id/81/50/?blur',
+      alt: 'campaign two',
+      type: 'Re-targeting',
+    },
+    visitors: 998,
+    contacts: 182,
+    companies: 121,
+    leads: 20.1,
+    value: 63.21,
+  },
+  {
+    id: 3,
+    campaign: {
+      name: 'Demo',
+      image: 'https://picsum.photos/id/95/50/?blur',
+      alt: 'campaign three',
+      type: 'Request',
+    },
+    visitors: 891,
+    contacts: 145,
+    companies: 81,
+    leads: 14.2,
+    value: 48.39,
+  },
+  {
+    id: 4,
+    campaign: {
+      name: 'Global',
+      image: 'https://picsum.photos/id/135/50/?blur',
+      alt: 'campaign four',
+      type: 'Tool',
+    },
+    visitors: 541,
+    contacts: 98,
+    companies: 67,
+    leads: 10.7,
+    value: 35.71,
+  },
+]
