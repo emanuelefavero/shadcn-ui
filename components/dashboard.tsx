@@ -7,7 +7,7 @@ import { CampaignPerformance } from './campaign-performance'
 function Dashboard() {
   return (
     <>
-      <section className='flex justify-between'>
+      <section className='w-full flex justify-between'>
         <H1 className='font-semibold text-3xl mb-10 select-none'>Dashboard</H1>
         <SearchInput />
       </section>

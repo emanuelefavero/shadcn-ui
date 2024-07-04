@@ -13,12 +13,14 @@ function CampaignPerformance() {
   if (!campaignData) return null
 
   return (
-    <>
-      <h2 className={`font-semibold text-xl text-text-secondary select-none`}>
+    <div className='overflow-scroll'>
+      <h2
+        className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
+      >
         Campaign Performance
       </h2>
 
-      <Table>
+      <Table className='max-w-fit'>
         <TableHeader>
           <TableRow>
             <TableHead>NO.</TableHead>
@@ -68,7 +70,7 @@ function CampaignPerformance() {
           ))}
         </TableBody>
       </Table>
-    </>
+    </div>
   )
 }
 
