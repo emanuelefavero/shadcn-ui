@@ -14,7 +14,9 @@ function CampaignPerformance() {
 
   return (
     <>
-      <h2>CampaignPerformance</h2>
+      <h2 className={`font-semibold text-xl text-text-secondary select-none`}>
+        Campaign Performance
+      </h2>
 
       <Table>
         <TableHeader>
@@ -31,9 +33,11 @@ function CampaignPerformance() {
         <TableBody>
           {campaignData.map((campaign) => (
             <TableRow key={campaign.id}>
-              <TableCell>{campaign.id}</TableCell>
-              <TableCell className='flex'>
-                <Avatar className='mr-3'>
+              <TableCell className='text-muted-foreground'>
+                {campaign.id}
+              </TableCell>
+              <TableCell className='flex items-center min-w-max'>
+                <Avatar className='mr-3 select-none'>
                   <AvatarImage
                     src={campaign.campaign.image}
                     alt={campaign.campaign.alt}
@@ -43,15 +47,23 @@ function CampaignPerformance() {
                   </AvatarFallback>
                 </Avatar>
                 <div className='flex flex-col'>
-                  <span>{campaign.campaign.name}</span>
-                  <span>{campaign.campaign.type}</span>
+                  <span className='text-base text-foreground mb-1'>
+                    {campaign.campaign.name}
+                  </span>
+                  <span className='select-none text-xs text-muted-foreground'>
+                    {campaign.campaign.type}
+                  </span>
                 </div>
               </TableCell>
               <TableCell>{campaign.visitors}</TableCell>
               <TableCell>{campaign.contacts}</TableCell>
               <TableCell>{campaign.companies}</TableCell>
-              <TableCell>{campaign.leads}</TableCell>
-              <TableCell className='text-right'>${campaign.value}</TableCell>
+              <TableCell className='text-foreground'>
+                {campaign.leads}
+              </TableCell>
+              <TableCell className='text-right text-purple-500'>
+                ${campaign.value}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
