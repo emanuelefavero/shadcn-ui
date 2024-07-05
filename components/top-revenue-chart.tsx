@@ -51,7 +51,7 @@ function TopRevenueChart() {
             size: 14,
           },
 
-          padding: 25,
+          padding: 15,
         },
       },
     },
