@@ -6,7 +6,7 @@ import './top-revenue.css'
 function TopRevenue() {
   return (
     <div className='w-full xs:w-fit flex justify-center'>
-      <Card className='dottedOutsideBorder relative max-w-[320px] w-full rounded-xl bg-gradient-to-tr from-[rgba(182,27,243,0.1)] dark:from-[rgba(182,27,243,0.24)] to-transparent py-6 px-5 flex flex-col justify-between'>
+      <Card className='dottedOutsideBorder relative max-w-[320px] max-h-[380px] w-full rounded-xl bg-gradient-to-tr from-[rgba(182,27,243,0.1)] dark:from-[rgba(182,27,243,0.24)] to-transparent py-6 px-5 flex flex-col justify-between'>
         <h2
           className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
         >
