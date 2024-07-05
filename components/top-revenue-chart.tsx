@@ -9,21 +9,27 @@ ChartJS.register(Tooltip, Legend, ArcElement)
 function TopRevenueChart() {
   let data = [
     {
-      label: 'Label 1',
-      value: 55,
-      color: 'rgba(0, 43, 73, 1)',
+      label: 'Direct',
+      value: 1300,
+      color: 'rgb(168, 85, 247)',
+      cutout: '60%',
+    },
+    {
+      label: 'Paid',
+      value: 850,
+      color: '#0ea5e9',
       cutout: '50%',
     },
     {
-      label: 'Label 2',
-      value: 15,
-      color: 'rgba(0, 103, 160, 1)',
+      label: 'Social',
+      value: 1500,
+      color: 'rgb(99, 102, 241)',
       cutout: '50%',
     },
     {
-      label: 'Label 3',
-      value: 80,
-      color: 'rgba(83, 217, 217, 1)',
+      label: 'Other',
+      value: 650,
+      color: '#14b8a6',
       cutout: '50%',
     },
   ]
@@ -31,11 +37,28 @@ function TopRevenueChart() {
   const options: any = {
     plugins: {
       responsive: true,
+      legend: {
+        position: 'bottom' as const,
+        align: 'center' as const,
+
+        labels: {
+          color: '#64748b',
+          usePointStyle: true,
+          boxWidth: 9,
+          boxHeight: 9,
+
+          font: {
+            size: 14,
+          },
+
+          padding: 25,
+        },
+      },
     },
     cutout: data.map((item) => item.cutout),
   }
 
-  const finalData = {
+  const chartData = {
     labels: data.map((item) => item.label),
     datasets: [
       {
@@ -50,7 +73,7 @@ function TopRevenueChart() {
 
   return (
     <div className='flex justify-center'>
-      <Doughnut data={finalData} options={options} />
+      <Doughnut data={chartData} options={options} />
     </div>
   )
 }
