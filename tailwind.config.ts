@@ -12,7 +12,8 @@ const config = {
   prefix: '',
   theme: {
     screens: {
-      xs: '440px',
+      xxs: '440px',
+      xs: '540px',
     },
     container: {
       center: true,

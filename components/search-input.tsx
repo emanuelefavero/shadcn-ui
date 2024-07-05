@@ -16,7 +16,7 @@ function SearchInput() {
   return (
     <>
       {/* Search Input */}
-      <div className='relative max-w-60 hidden xs:block'>
+      <div className='relative max-w-60 hidden xxs:block'>
         <Button
           className='w-full min-w-40 justify-start pl-9 pr-4 py-2 bg-purple-900 bg-opacity-5 text-slate-500 rounded-lg border hover:bg-purple-500 hover:bg-opacity-10 hover:text-foreground peer'
           onClick={handleOpenChange}
@@ -27,7 +27,7 @@ function SearchInput() {
       </div>
 
       {/* Search Input Button */}
-      <div className='block xs:hidden'>
+      <div className='block xxs:hidden'>
         <Button
           variant='outline'
           size='icon'
