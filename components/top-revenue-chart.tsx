@@ -12,25 +12,21 @@ function TopRevenueChart() {
       label: 'Direct',
       value: 1300,
       color: 'rgb(168, 85, 247)',
-      cutout: '60%',
     },
     {
       label: 'Paid',
       value: 850,
       color: '#0ea5e9',
-      cutout: '50%',
     },
     {
       label: 'Social',
       value: 1500,
       color: 'rgb(99, 102, 241)',
-      cutout: '50%',
     },
     {
       label: 'Other',
       value: 650,
       color: '#14b8a6',
-      cutout: '50%',
     },
   ]
 
@@ -55,7 +51,7 @@ function TopRevenueChart() {
         },
       },
     },
-    cutout: data.map((item) => item.cutout),
+    cutout: '60%',
   }
 
   const chartData = {
