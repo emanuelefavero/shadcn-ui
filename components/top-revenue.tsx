@@ -5,7 +5,7 @@ import { TopRevenueChart } from './top-revenue-chart'
 function TopRevenue() {
   return (
     <div className='w-full xs:w-fit flex justify-center'>
-      <Card className='relative max-w-[320px] w-full rounded-xl overflow-hidden bg-purple-900 bg-opacity-5 py-6 px-5 flex flex-col justify-between'>
+      <Card className='relative max-w-[320px] w-full rounded-xl overflow-hidden bg-gradient-to-tr from-[rgba(182,27,243,0.1)] dark:from-[rgba(182,27,243,0.24)] to-transparent py-6 px-5 flex flex-col justify-between'>
         <h2
           className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
         >

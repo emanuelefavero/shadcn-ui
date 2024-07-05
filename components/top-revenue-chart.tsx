@@ -42,7 +42,7 @@ function TopRevenueChart() {
         align: 'center' as const,
 
         labels: {
-          color: '#64748b',
+          color: '#7b8fac',
           usePointStyle: true,
           boxWidth: 9,
           boxHeight: 9,
