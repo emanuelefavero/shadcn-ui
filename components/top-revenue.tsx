@@ -15,7 +15,7 @@ function TopRevenue() {
           >
             Top Revenue Channels
           </h2>
-          <Button variant='outline' size='icon'>
+          <Button variant='outline' size='icon' className='bg-transparent'>
             <ChevronRight />
             <span className='sr-only'>View more</span>
           </Button>
