@@ -3,6 +3,7 @@ import { SearchInput } from '@/components/search-input'
 import { MainCard } from '@/components/main-card'
 import { DealsAndRevenue } from '@/components/deals-and-revenue'
 import { CampaignPerformance } from './campaign-performance'
+import { TopRevenue } from './top-revenue'
 
 function Dashboard() {
   return (
@@ -17,6 +18,7 @@ function Dashboard() {
         <MainCard />
         <DealsAndRevenue />
         <CampaignPerformance />
+        <TopRevenue />
       </section>
     </>
   )
