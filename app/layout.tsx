@@ -21,7 +21,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    // TIP: suppressHydrationWarning is used to prevent React hydration warning caused by shadcn dark mode script
+    <html lang='en' suppressHydrationWarning>
       <body
         className={cn(
           'min-h-screen bg-background font-sans antialiased',
