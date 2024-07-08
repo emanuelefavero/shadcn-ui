@@ -8,8 +8,10 @@ import { TopRevenue } from './top-revenue'
 function Dashboard() {
   return (
     <>
-      <section className='w-full flex justify-between mb-10'>
-        <H1 className='font-semibold text-3xl mb-10 select-none'>Dashboard</H1>
+      <section className='w-full flex justify-between items-center mb-10 xs:mb-20'>
+        <H1 className='font-semibold text-lg 2xxs:text-3xl select-none'>
+          Dashboard
+        </H1>
         <SearchInput />
       </section>
 
