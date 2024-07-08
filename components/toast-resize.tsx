@@ -10,7 +10,7 @@ function ToastResize() {
 
   useWindowResize(() => {
     setShow(true)
-    setTimeout(() => setShow(false), 3000)
+    setTimeout(() => setShow(false), 8000)
   })
 
   return (
@@ -28,7 +28,7 @@ function ToastResize() {
         }}
         className='font-medium text-green-600 dark:text-green-500 hover:underline hover:text-green-500 dark:hover:text-green-400 active:scale-90 transition-transform duration-150 peer group/refresh'
       >
-        <RefreshCcw className='h-4 w-4 inline relative -top-[1px] group-hover/refresh:animate-spin' />{' '}
+        <RefreshCcw className='h-3.5 w-3.5 inline relative -top-[1px] group-hover/refresh:animate-spin-slow' />{' '}
         Refresh
       </button>{' '}
       the page to resize the charts
