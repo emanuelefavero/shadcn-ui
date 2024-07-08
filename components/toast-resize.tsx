@@ -14,13 +14,23 @@ function ToastResize() {
 
   return (
     <Card
-      className={`fixed left-1/2 transform -translate-x-1/2 text-base text-foreground bg-purple-900 bg-opacity-5 pl-3 pr-6 py-2 rounded-lg transition-all duration-250 z-50 cursor-pointer hover:bg-rose-500/10 group ${
+      className={`fixed left-1/2 transform -translate-x-1/2 text-base text-foreground bg-[rgba(6,10,29,0.5)] backdrop-blur-md pl-3 pr-6 py-2 rounded-lg transition-all duration-250 z-50 cursor-pointer select-none hover:bg-[rgba(15,14,41,0.6)] group/card ${
         show ? 'top-5' : '-top-20'
       }`}
       onClick={() => setShow(false)}
     >
-      <span>Refresh the page to resize the charts</span>
-      <span className='absolute top-0 right-0 px-2.5 py-1 text-sm text-rose-500 hidden group-hover:inline'>
+      <button
+        type='button'
+        onClick={() => {
+          // e.stopPropagation()
+          window.location.reload()
+        }}
+        className='font-medium text-green-600 dark:text-green-500 hover:underline hover:text-green-500 dark:hover:text-green-400 active:scale-90 transition-transform duration-150 peer'
+      >
+        Refresh
+      </button>{' '}
+      the page to resize the charts
+      <span className='absolute top-0 right-0 px-2.5 py-1 font-semibold text-sm text-rose-500 hidden group-hover/card:inline peer-hover:hidden'>
         X
       </span>
     </Card>
