@@ -13,14 +13,15 @@ function CampaignPerformance() {
   if (!campaignData) return null
 
   return (
-    <div className='overflow-scroll'>
+    <div className='overflow-scroll w-full lg:w-[678px] xl:w-fit'>
       <h2
         className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
       >
         Campaign Performance
       </h2>
 
-      <Table className='max-w-fit'>
+      {/* TODO: add max-w-fit to Table */}
+      <Table className='lg:max-w-fit'>
         <TableHeader>
           <TableRow>
             <TableHead>NO.</TableHead>
