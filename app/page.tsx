@@ -1,4 +1,5 @@
 import { Header } from '@/components/header'
+import { Footer } from '@/components/footer'
 import { Dashboard } from '@/components/dashboard'
 import AnimatedCursor from 'react-animated-cursor'
 
@@ -7,7 +8,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className='px-4 py-2 w-full max-w-[1280px] mx-auto'>
+      <main className='px-4 py-2 w-full max-w-[1280px] mx-auto mb-20'>
         <Dashboard />
       </main>
 
@@ -21,6 +22,8 @@ export default function Home() {
         showSystemCursor={true}
         trailingSpeed={8}
       />
+
+      <Footer />
     </>
   )
 }
