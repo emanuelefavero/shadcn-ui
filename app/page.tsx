@@ -1,11 +1,14 @@
+import { ToastResize } from '@/components/toast-resize'
 import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
 import { Dashboard } from '@/components/dashboard'
+import { Footer } from '@/components/footer'
 import AnimatedCursor from 'react-animated-cursor'
 
 export default function Home() {
   return (
     <>
+      <ToastResize />
+
       <Header />
 
       <main className='px-4 py-2 w-full max-w-[1280px] mx-auto mb-20'>
