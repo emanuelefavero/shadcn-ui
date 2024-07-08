@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import useWindowResize from '@/hooks/useWindowResize'
 import { Card } from '@/components/ui/card'
+import { RefreshCcw } from 'lucide-react'
 
 function ToastResize() {
   const [show, setShow] = useState(false)
@@ -25,8 +26,9 @@ function ToastResize() {
           // e.stopPropagation()
           window.location.reload()
         }}
-        className='font-medium text-green-600 dark:text-green-500 hover:underline hover:text-green-500 dark:hover:text-green-400 active:scale-90 transition-transform duration-150 peer'
+        className='font-medium text-green-600 dark:text-green-500 hover:underline hover:text-green-500 dark:hover:text-green-400 active:scale-90 transition-transform duration-150 peer group/refresh'
       >
+        <RefreshCcw className='h-4 w-4 inline relative -top-[1px] group-hover/refresh:animate-spin' />{' '}
         Refresh
       </button>{' '}
       the page to resize the charts
