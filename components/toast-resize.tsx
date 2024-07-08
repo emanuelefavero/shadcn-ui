@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react'
 import useWindowResize from '@/hooks/useWindowResize'
-import './toast-resize.css'
 
 function ToastResize() {
   const [show, setShow] = useState(false)
@@ -13,8 +12,12 @@ function ToastResize() {
   })
 
   return (
-    <div className={`toast ${show ? 'show' : ''}`}>
-      <p>Please refresh the page</p>
+    <div
+      className={`fixed left-1/2 transform -translate-x-1/2 bg-gray-800 text-white py-3 px-6 rounded shadow-lg transition-all duration-500 z-50 ${
+        show ? 'top-5' : '-top-20'
+      }`}
+    >
+      <span>Refresh the page to resize the charts</span>
     </div>
   )
 }
