@@ -33,7 +33,7 @@ function MainCardMenu({ data }: Props) {
         <DropdownMenuContent className='max-w-50'>
           <DropdownMenuItem className='group cursor-pointer'>
             <RefreshCcw className='h-4 w-4 mr-3 group-hover:text-green-500 transition-colors duration-200' />
-            Refresh {data.label}
+            <span>Refresh {data.label}</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

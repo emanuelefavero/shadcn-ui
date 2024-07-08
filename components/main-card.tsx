@@ -28,7 +28,7 @@ function MainCard() {
           onClick={() => {
             handleSelect(data.label)
           }}
-          className={`flex flex-col p-5 hover:bg-purple-500 hover:bg-opacity-5 ${
+          className={`flex flex-col p-3 2xxs:p-5 text-sm 2xxs:text-base hover:bg-purple-500 hover:bg-opacity-5 ${
             data.selected
               ? 'bg-gradient-to-br from-purple-500 to-purple-300 dark:from-purple-500 dark:to-purple-300'
               : 'cursor-pointer'
@@ -48,7 +48,7 @@ function MainCard() {
           <data
             id={convertLabelToId(data.label)}
             value={data.value}
-            className={`font-bold text-2xl mb-3 ${
+            className={`font-bold text-sm 2xxs:text-2xl mb-3 ${
               data.selected && 'text-white dark:text-background'
             }`}
           >
