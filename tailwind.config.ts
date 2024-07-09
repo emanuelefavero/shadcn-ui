@@ -87,15 +87,15 @@ const config = {
           to: { transform: 'translateY(0)', opacity: '1' },
         },
         'slide-in-bottom': {
-          from: { transform: 'translateY(150%)', opacity: '0' },
+          from: { transform: 'translateY(100%)', opacity: '0' },
           to: { transform: 'translateY(0)', opacity: '1' },
         },
         'slide-in-left': {
-          from: { transform: 'translateX(-300%)', opacity: '0' },
+          from: { transform: 'translateX(-100%)', opacity: '0' },
           to: { transform: 'translateX(0)', opacity: '1' },
         },
         'slide-in-right': {
-          from: { transform: 'translateX(250%)', opacity: '0' },
+          from: { transform: 'translateX(100%)', opacity: '0' },
           to: { transform: 'translateX(0)', opacity: '1' },
         },
       },
