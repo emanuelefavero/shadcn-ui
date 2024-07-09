@@ -1,5 +1,3 @@
-'use client'
-
 import { useState, useEffect, useRef, MutableRefObject } from 'react'
 
 const useScrollVisibility = (): [
