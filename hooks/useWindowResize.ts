@@ -16,4 +16,4 @@ const useWindowResize = (onResize: () => void) => {
   }, [onResize])
 }
 
-export default useWindowResize
+export { useWindowResize }

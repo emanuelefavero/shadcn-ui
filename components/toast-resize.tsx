@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import useWindowResize from '@/hooks/useWindowResize'
+import {useWindowResize} from '@/hooks/useWindowResize'
 import { Card } from '@/components/ui/card'
 import { RefreshCcw } from 'lucide-react'
 
