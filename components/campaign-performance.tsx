@@ -13,7 +13,7 @@ function CampaignPerformance() {
   if (!campaignData) return null
 
   return (
-    <div className='overflow-scroll w-full lg:w-[678px] xl:w-fit'>
+    <div className='animation-slide-in-left overflow-scroll w-full lg:w-[678px] xl:w-fit'>
       <h2
         className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
       >

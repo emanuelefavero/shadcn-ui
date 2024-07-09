@@ -7,7 +7,7 @@ import './top-revenue.css'
 
 function TopRevenue() {
   return (
-    <div className='w-fit flex justify-center'>
+    <div className='animation-slide-in-bottom w-fit flex justify-center'>
       <Card className='dottedOutsideBorder relative max-w-[190px] 2xxs:max-w-[320px] 2xxs:max-h-[380px] 2xxs:w-full rounded-xl bg-gradient-to-tr from-[rgba(182,27,243,0.1)] dark:from-[rgba(182,27,243,0.24)] to-transparent py-5 px-5 flex flex-col justify-between'>
         <div className='w-full flex justify-between items-center mb-6'>
           <h2
