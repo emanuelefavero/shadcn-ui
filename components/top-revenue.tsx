@@ -9,11 +9,11 @@ import './top-revenue.css'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 
 function TopRevenue() {
-  const [ref, isVisible] = useScrollVisibility()
+  const [scrollVisibilityRef, isVisible] = useScrollVisibility()
 
   return (
     <div
-      ref={ref}
+      ref={scrollVisibilityRef}
       className={`${
         isVisible ? 'animate-slide-in-bottom' : 'opacity-0 translate-y-1/2'
       } w-fit flex justify-center`}

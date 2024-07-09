@@ -13,13 +13,13 @@ import { campaignData } from '@/data/campaignData'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 
 function CampaignPerformance() {
-  const [ref, isVisible] = useScrollVisibility()
+  const [scrollVisibilityRef, isVisible] = useScrollVisibility()
 
   if (!campaignData) return null
 
   return (
     <div
-      ref={ref}
+      ref={scrollVisibilityRef}
       className={`${
         isVisible ? 'animate-slide-in-left' : 'opacity-0 translate-y-1/2'
       } overflow-scroll w-full lg:w-[678px] xl:w-fit`}
