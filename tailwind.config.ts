@@ -82,11 +82,31 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' },
         },
+        'slide-in-top': {
+          from: { transform: 'translateY(-200%)', opacity: '0' },
+          to: { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-in-bottom': {
+          from: { transform: 'translateY(150%)', opacity: '0' },
+          to: { transform: 'translateY(0)', opacity: '1' },
+        },
+        'slide-in-left': {
+          from: { transform: 'translateX(-300%)', opacity: '0' },
+          to: { transform: 'translateX(0)', opacity: '1' },
+        },
+        'slide-in-right': {
+          from: { transform: 'translateX(250%)', opacity: '0' },
+          to: { transform: 'translateX(0)', opacity: '1' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'spin-slow': 'spin 2.5s linear infinite reverse',
+        'slide-in-top': 'slide-in-top 0.75s ease-out forwards',
+        'slide-in-bottom': 'slide-in-bottom 0.75s ease-out forwards',
+        'slide-in-left': 'slide-in-left 0.75s ease-out forwards',
+        'slide-in-right': 'slide-in-right 0.75s ease-out forwards',
       },
     },
   },
