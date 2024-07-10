@@ -6,6 +6,10 @@ This is a dashboard built with Next.js and components from the [Shadcn/ui](https
 >
 > Note: This is a work in progress
 
+## Demo
+
+- [https://shadcn-ui-dashboard.vercel.app/](https://shadcn-ui-dashboard.vercel.app/)
+
 ## Installation
 
 - Clone the repository, then run:
