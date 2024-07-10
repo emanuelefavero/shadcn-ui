@@ -1,5 +1,5 @@
-import { DarkModeToggle } from '@/components/dark-mode-toggle'
-import { Sidebar } from '@/components/sidebar'
+import { DarkModeToggle } from '@/components/DarkModeToggle'
+import { Sidebar } from '@/components/Sidebar'
 
 function Header() {
   return (

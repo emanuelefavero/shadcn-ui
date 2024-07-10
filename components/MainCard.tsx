@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from 'react'
-import { Card } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
+import { Card } from '@/components/ui/Card'
+import { Badge } from '@/components/ui/Badge'
 import { convertLabelToId } from '@/utils/stringUtils'
 import { mainData } from '@/data/mainData'
-import { MainCardMenu } from './main-card-menu'
+import { MainCardMenu } from './MainCardMenu'
 
 function MainCard() {
   const [data, setData] = useState(mainData)

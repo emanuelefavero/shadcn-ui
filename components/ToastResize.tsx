@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import {useWindowResize} from '@/hooks/useWindowResize'
-import { Card } from '@/components/ui/card'
+import { useWindowResize } from '@/hooks/useWindowResize'
+import { Card } from '@/components/ui/Card'
 import { RefreshCcw } from 'lucide-react'
 
 function ToastResize() {

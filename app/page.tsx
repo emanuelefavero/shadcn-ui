@@ -1,7 +1,7 @@
-import { ToastResize } from '@/components/toast-resize'
-import { Header } from '@/components/header'
-import { Dashboard } from '@/components/dashboard'
-import { Footer } from '@/components/footer'
+import { ToastResize } from '@/components/ToastResize'
+import { Header } from '@/components/Header'
+import { Dashboard } from '@/components/Dashboard'
+import { Footer } from '@/components/Footer'
 import AnimatedCursor from 'react-animated-cursor'
 
 export default function Home() {

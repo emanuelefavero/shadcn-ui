@@ -1,9 +1,9 @@
-import { H1 } from '@/components/ui/typography'
-import { SearchInput } from '@/components/search-input'
-import { MainCard } from '@/components/main-card'
-import { DealsAndRevenue } from '@/components/deals-and-revenue'
-import { CampaignPerformance } from './campaign-performance'
-import { TopRevenue } from './top-revenue'
+import { H1 } from '@/components/ui/Typography'
+import { SearchInput } from '@/components/SearchInput'
+import { MainCard } from '@/components/MainCard'
+import { DealsAndRevenue } from '@/components/DealsAndRevenue'
+import { CampaignPerformance } from '@/components/CampaignPerformance'
+import { TopRevenue } from '@/components/TopRevenue'
 
 function Dashboard() {
   return (

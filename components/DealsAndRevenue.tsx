@@ -1,5 +1,5 @@
-import { Card } from '@/components/ui/card'
-import { DealsAndRevenueChart } from './deals-and-revenue-chart'
+import { Card } from '@/components/ui/Card'
+import { DealsAndRevenueChart } from '@/components/DealsAndRevenueChart'
 
 function DealsAndRevenue() {
   return (

@@ -7,8 +7,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from '@/components/ui/table'
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+} from '@/components/ui/Table'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/Avatar'
 import { campaignData } from '@/data/campaignData'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 

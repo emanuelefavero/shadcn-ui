@@ -1,10 +1,10 @@
 'use client'
 
 import { useState } from 'react'
-import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/Input'
+import { Button } from '@/components/ui/Button'
 import { Search } from 'lucide-react'
-import { SearchMenu } from '@/components/search-menu'
+import { SearchMenu } from '@/components/SearchMenu'
 
 function SearchInput() {
   const [open, setOpen] = useState(false)

@@ -10,7 +10,7 @@ import {
   Settings,
 } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/Button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,8 +19,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { AccountButton } from '@/components/account-button'
+} from '@/components/ui/DropdownMenu'
+import { AccountButton } from '@/components/AccountButton'
 
 function Sidebar() {
   return (

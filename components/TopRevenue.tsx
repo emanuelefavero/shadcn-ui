@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
-import { Card } from './ui/card'
-import { TopRevenueChart } from './top-revenue-chart'
-import { Button } from './ui/button'
+import { Card } from '@/components/ui/Card'
+import { TopRevenueChart } from '@/components/TopRevenueChart'
+import { Button } from '@/components/ui/Button'
 import { ChevronRight } from 'lucide-react'
-import './top-revenue.css'
+import './TopRevenue.css'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 
 function TopRevenue() {
