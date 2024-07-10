@@ -15,7 +15,7 @@ function ToastResize() {
 
   return (
     <Card
-      className={`fixed left-1/2 transform -translate-x-1/2 text-base text-foreground bg-[rgba(6,10,29,0.5)] backdrop-blur-md pl-3 pr-6 py-2 rounded-lg transition-all duration-250 z-50 cursor-pointer select-none hover:bg-[rgba(15,14,41,0.6)] group/card ${
+      className={`fixed left-1/2 transform -translate-x-1/2 text-base text-foreground bg-background backdrop-blur-md pl-3 pr-6 py-2 rounded-lg transition-all duration-250 z-50 cursor-pointer select-none group/card ${
         show ? 'top-5' : '-top-20'
       }`}
       onClick={() => setShow(false)}
