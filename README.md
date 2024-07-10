@@ -1,6 +1,6 @@
 # Shadcn/ui
 
-This project is built Next.js and components from the [Shadcn/ui](https://ui.shadcn.com/) collection.
+This is a dashboard built with Next.js and components from the [Shadcn/ui](https://ui.shadcn.com/) collection.
 
 > Note: Shadcn/ui is NOT a component library. It is a collection of components that you can copy and paste into your project
 >
