@@ -41,13 +41,13 @@ function SearchMenu({ open, onOpenChange }: Props) {
             <span onClick={onOpenChange}>
               <CommandItem className='w-full cursor-pointer'>
                 <CircleDollarSign className='mr-2 h-4 w-4' />
-                <span>Revenue</span>
+                <span>Sales</span>
               </CommandItem>
             </span>
             <span onClick={onOpenChange}>
               <CommandItem className='w-full cursor-pointer'>
                 <Map className='mr-2 h-4 w-4' />
-                <span>Progress</span>
+                <span>Marketing</span>
               </CommandItem>
             </span>
           </CommandGroup>
