@@ -47,7 +47,7 @@ function SearchMenu({ open, onOpenChange }: Props) {
             <span onClick={onOpenChange}>
               <CommandItem className='w-full cursor-pointer'>
                 <Map className='mr-2 h-4 w-4' />
-                <span>Journey</span>
+                <span>Progress</span>
               </CommandItem>
             </span>
           </CommandGroup>

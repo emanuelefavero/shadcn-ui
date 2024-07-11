@@ -34,7 +34,7 @@ function Sidebar() {
       <DropdownMenuContent className='w-56'>
         <DropdownMenuLabel className='uppercase flex items-center'>
           <Hexagon className='mr-2 h-4 w-4' />
-          <span>My Account</span>
+          <span>Account</span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
@@ -44,19 +44,15 @@ function Sidebar() {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <CircleDollarSign className='mr-2 h-4 w-4' />
-            <span>Revenue</span>
+            <span>Sales</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Map className='mr-2 h-4 w-4' />
-            <span>Journey</span>
+            <span>Marketing</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Zap className='mr-2 h-4 w-4' />
-            <span>Analysis</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Database className='mr-2 h-4 w-4' />
-            <span>Data</span>
+            <span>Top Revenue</span>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
