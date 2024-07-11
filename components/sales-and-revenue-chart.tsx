@@ -23,13 +23,13 @@ ChartJS.register(
   Legend
 )
 
-function DealsAndRevenueChart() {
+function SalesAndRevenueChart() {
   const data = {
-    labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
     datasets: [
       {
-        label: 'Deals',
-        data: [20, 600, 380, 350, 200, 600], // Sample data for deals
+        label: 'Sales',
+        data: [20, 600, 380, 350, 200, 600], // Sample data for sales
         borderColor: 'rgba(129, 141, 248)',
         backgroundColor: 'rgba(129, 141, 248, 0.2)',
       },
@@ -102,4 +102,4 @@ function DealsAndRevenueChart() {
   )
 }
 
-export { DealsAndRevenueChart }
+export { SalesAndRevenueChart }
