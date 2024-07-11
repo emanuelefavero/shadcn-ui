@@ -36,11 +36,11 @@ function MarketingAnalysis() {
           <TableRow>
             <TableHead>NO.</TableHead>
             <TableHead>MARKETING</TableHead>
-            <TableHead>VISITORS</TableHead>
-            <TableHead>CONTACTS</TableHead>
-            <TableHead>COMPANIES</TableHead>
-            <TableHead>LEADS</TableHead>
-            <TableHead className='text-right'>VALUE</TableHead>
+            <TableHead>USERS</TableHead>
+            <TableHead>RELATIONS</TableHead>
+            <TableHead>BUSINESSES</TableHead>
+            <TableHead>BUYERS</TableHead>
+            <TableHead className='text-right'>PROFITS</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -68,14 +68,14 @@ function MarketingAnalysis() {
                   </span>
                 </div>
               </TableCell>
-              <TableCell>{marketing.visitors}</TableCell>
-              <TableCell>{marketing.contacts}</TableCell>
-              <TableCell>{marketing.companies}</TableCell>
+              <TableCell>{marketing.users}</TableCell>
+              <TableCell>{marketing.relations}</TableCell>
+              <TableCell>{marketing.businesses}</TableCell>
               <TableCell className='text-foreground'>
-                {marketing.leads}
+                {marketing.buyers}
               </TableCell>
-              <TableCell className='text-right text-purple-500'>
-                ${marketing.value}
+              <TableCell className='text-purple-500'>
+                ${marketing.profits}
               </TableCell>
             </TableRow>
           ))}
