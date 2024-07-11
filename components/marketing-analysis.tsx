@@ -9,13 +9,13 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { campaignData } from '@/data/campaignData'
+import { marketingData } from '@/data/marketingData'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 
-function CampaignPerformance() {
+function MarketingAnalysis() {
   const [scrollVisibilityRef, isVisible] = useScrollVisibility()
 
-  if (!campaignData) return null
+  if (!marketingData) return null
 
   return (
     <div
@@ -27,7 +27,7 @@ function CampaignPerformance() {
       <h2
         className={`font-semibold text-xl text-text-secondary mb-6 select-none`}
       >
-        Campaign Performance
+        Marketing Analysis
       </h2>
 
       {/* TODO: add max-w-fit to Table */}
@@ -35,7 +35,7 @@ function CampaignPerformance() {
         <TableHeader>
           <TableRow>
             <TableHead>NO.</TableHead>
-            <TableHead>CAMPAIGN</TableHead>
+            <TableHead>MARKETING</TableHead>
             <TableHead>VISITORS</TableHead>
             <TableHead>CONTACTS</TableHead>
             <TableHead>COMPANIES</TableHead>
@@ -44,38 +44,38 @@ function CampaignPerformance() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {campaignData.map((campaign) => (
-            <TableRow key={campaign.id}>
+          {marketingData.map((marketing) => (
+            <TableRow key={marketing.id}>
               <TableCell className='text-muted-foreground'>
-                {campaign.id}
+                {marketing.id}
               </TableCell>
               <TableCell className='flex items-center min-w-max'>
                 <Avatar className='mr-3 select-none'>
                   <AvatarImage
-                    src={campaign.campaign.image}
-                    alt={campaign.campaign.alt}
+                    src={marketing.marketing.image}
+                    alt={marketing.marketing.alt}
                   />
                   <AvatarFallback>
-                    {campaign.campaign.avatarFallback}
+                    {marketing.marketing.avatarFallback}
                   </AvatarFallback>
                 </Avatar>
                 <div className='flex flex-col'>
                   <span className='text-base text-foreground mb-1'>
-                    {campaign.campaign.name}
+                    {marketing.marketing.name}
                   </span>
                   <span className='select-none text-xs text-muted-foreground'>
-                    {campaign.campaign.type}
+                    {marketing.marketing.type}
                   </span>
                 </div>
               </TableCell>
-              <TableCell>{campaign.visitors}</TableCell>
-              <TableCell>{campaign.contacts}</TableCell>
-              <TableCell>{campaign.companies}</TableCell>
+              <TableCell>{marketing.visitors}</TableCell>
+              <TableCell>{marketing.contacts}</TableCell>
+              <TableCell>{marketing.companies}</TableCell>
               <TableCell className='text-foreground'>
-                {campaign.leads}
+                {marketing.leads}
               </TableCell>
               <TableCell className='text-right text-purple-500'>
-                ${campaign.value}
+                ${marketing.value}
               </TableCell>
             </TableRow>
           ))}
@@ -85,4 +85,4 @@ function CampaignPerformance() {
   )
 }
 
-export { CampaignPerformance }
+export { MarketingAnalysis }

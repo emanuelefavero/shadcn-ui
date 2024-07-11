@@ -52,7 +52,7 @@ function Sidebar() {
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Zap className='mr-2 h-4 w-4' />
-            <span>Performance</span>
+            <span>Analysis</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Database className='mr-2 h-4 w-4' />

@@ -1,0 +1,62 @@
+export const marketingData = [
+  {
+    id: 1,
+    marketing: {
+      name: 'ZQX',
+      image: 'https://picsum.photos/id/82/40/?blur',
+      alt: 'marketing one',
+      avatarFallback: 'Z', // Fallback for the image, use the first letter of the name
+      type: 'Research',
+    },
+    visitors: 1098,
+    contacts: 198,
+    companies: 141,
+    leads: 22.3,
+    value: 73.21,
+  },
+  {
+    id: 2,
+    marketing: {
+      name: 'WAS',
+      image: 'https://picsum.photos/id/249/40/?blur',
+      alt: 'marketing two',
+      avatarFallback: 'WA',
+      type: 'Targeting',
+    },
+    visitors: 789,
+    contacts: 145,
+    companies: 101,
+    leads: 18.2,
+    value: 63.89,
+  },
+  {
+    id: 3,
+    marketing: {
+      name: 'DAS',
+      image: 'https://picsum.photos/id/152/40/?blur',
+      alt: 'marketing three',
+      avatarFallback: 'D',
+      type: 'Analysis',
+    },
+    visitors: 641,
+    contacts: 98,
+    companies: 71,
+    leads: 12.3,
+    value: 45.21,
+  },
+  {
+    id: 4,
+    marketing: {
+      name: 'GBL',
+      image: 'https://picsum.photos/id/135/40/?blur',
+      alt: 'marketing four',
+      avatarFallback: 'G',
+      type: 'Research',
+    },
+    visitors: 541,
+    contacts: 87,
+    companies: 61,
+    leads: 9.2,
+    value: 35.89,
+  },
+]

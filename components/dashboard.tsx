@@ -2,7 +2,7 @@ import { H1 } from '@/components/ui/typography'
 import { SearchInput } from '@/components/search-input'
 import { MainCard } from '@/components/main-card'
 import { SalesAndRevenue } from '@/components/sales-and-revenue'
-import { CampaignPerformance } from '@/components/campaign-performance'
+import { MarketingAnalysis } from '@/components/marketing-analysis'
 import { TopRevenue } from '@/components/top-revenue'
 
 function Dashboard() {
@@ -19,7 +19,7 @@ function Dashboard() {
       <section className='flex flex-row flex-wrap justify-center gap-8 pb-10'>
         <MainCard />
         <SalesAndRevenue />
-        <CampaignPerformance />
+        <MarketingAnalysis />
         <TopRevenue />
       </section>
     </>
