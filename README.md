@@ -10,6 +10,10 @@ This is a dashboard built with Next.js and components from the [Shadcn/ui](https
 
 - [https://shadcn-ui-dashboard.vercel.app/](https://shadcn-ui-dashboard.vercel.app/)
 
+### Screenshot
+
+![screenshot](./screenshot.png 'screenshot')
+
 ## Installation
 
 - Clone the repository, then run:
