@@ -9,22 +9,22 @@ ChartJS.register(Tooltip, Legend, ArcElement)
 function TopRevenueChart() {
   let data = [
     {
-      label: 'Direct',
+      label: 'Organic',
       value: 1300,
       color: 'rgb(168, 85, 247)',
     },
     {
-      label: 'Paid',
+      label: 'Dir',
       value: 850,
       color: '#0ea5e9',
     },
     {
-      label: 'Social',
+      label: 'Ref',
       value: 1500,
       color: 'rgb(99, 102, 241)',
     },
     {
-      label: 'Other',
+      label: 'Social',
       value: 650,
       color: '#14b8a6',
     },

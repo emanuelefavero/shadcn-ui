@@ -23,7 +23,7 @@ function TopRevenue() {
           <h2
             className={`font-semibold text-base 2xxs:text-xl text-text-secondary select-none`}
           >
-            Top Revenue Channels
+            Top Revenue Streams
           </h2>
           <Button variant='outline' size='icon' className='bg-transparent'>
             <ChevronRight />
@@ -34,7 +34,7 @@ function TopRevenue() {
 
         {/* Center span inside card */}
         <span className='hidden 2xxs:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl mt-[0.9rem] tracking-wider font-semibold text-text-primary select-none'>
-          $4,271
+          $6,250
         </span>
       </Card>
     </div>
