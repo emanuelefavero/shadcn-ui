@@ -3,11 +3,13 @@ import { Header } from '@/components/header'
 import { Dashboard } from '@/components/dashboard'
 import { Footer } from '@/components/footer'
 import AnimatedCursor from 'react-animated-cursor'
+import { ScrollDownButton } from '@/components/scroll-down-button'
 
 export default function Home() {
   return (
     <>
       <ToastResize />
+      <ScrollDownButton />
 
       <Header />
 
