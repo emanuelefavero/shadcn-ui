@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { isMobile } from 'react-device-detect'
 import { useWindowResize } from '@/hooks/useWindowResize'
 import { Card } from '@/components/ui/card'
 import { RefreshCcw } from 'lucide-react'
@@ -12,6 +13,8 @@ function ToastResize() {
     setShow(true)
     setTimeout(() => setShow(false), 8000)
   })
+
+  if (isMobile) return null
 
   return (
     <Card
