@@ -1,5 +1,7 @@
 'use client'
 
+import { useContext } from 'react'
+import { VisibilityContext } from '@/context/visibility-context'
 import {
   Table,
   TableBody,
@@ -13,9 +15,12 @@ import { marketingData } from '@/data/marketingData'
 import { useScrollVisibility } from '@/hooks/useScrollVisibility'
 
 function MarketingAnalysis() {
+  const { setIsMarketingSectionVisible } = useContext(VisibilityContext)
   const [scrollVisibilityRef, isVisible] = useScrollVisibility()
 
   if (!marketingData) return null
+
+  if (isVisible) setIsMarketingSectionVisible(true)
 
   return (
     <div

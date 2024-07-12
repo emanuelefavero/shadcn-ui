@@ -1,12 +1,17 @@
 'use client'
 
+import { useContext } from 'react'
+import { VisibilityContext } from '@/context/visibility-context'
 import { ChevronDown } from 'lucide-react'
 import { useScrollDistance } from '@/hooks/useScrollDistance'
 
 function ScrollDownButton() {
+  const { isMarketingSectionVisible } = useContext(VisibilityContext)
+
   const scrollDistance = useScrollDistance()
 
   if (scrollDistance > 130) return null
+  if (isMarketingSectionVisible) return null
 
   return (
     <div className='block lg:hidden absolute bottom-3 left-1/2 z-50 text-3xl font-medium text-purple-400 text-opacity-50 dark:text-purple-600 dark:text-opacity-50 select-none animate-bounce'>
