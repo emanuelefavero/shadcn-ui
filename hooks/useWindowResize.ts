@@ -1,3 +1,5 @@
+// * Hook to detect if the window is resized
+
 import { useEffect } from 'react'
 
 const useWindowResize = (onResize: () => void) => {

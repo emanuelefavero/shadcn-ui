@@ -1,3 +1,5 @@
+// * Hook to detect if the browser is in dark mode
+
 import { useState, useEffect } from 'react'
 
 const useDarkMode = () => {

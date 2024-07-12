@@ -1,3 +1,5 @@
+// * Hook to detect if an element is visible in the viewport
+
 import { useState, useEffect, useRef, MutableRefObject } from 'react'
 
 const useScrollVisibility = (): [
